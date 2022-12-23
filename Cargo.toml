@@ -1,0 +1,14 @@
+[package]
+name = "energyhub"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+"rumqttc" = "0.18.0"
+rusqlite = { version = "0.28.0", features = ["bundled"] }
+serde = { version = "1.0.149", features = ["derive"] }
+serde_json = "1.0.89"
+chrono = { version = "0.4.23", features = ["serde"] }
